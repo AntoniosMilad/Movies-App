@@ -1,75 +1,68 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
-import React, { useEffect ,useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   SafeAreaView,
-  ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
   useColorScheme,
   View,
+  Text,
+  Platform,
+  PermissionsAndroid,
 } from 'react-native';
+import Geolocation from 'react-native-geolocation-service';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { NavigationContainer } from "@react-navigation/native";
-// import { Main } from 'navigation/Main';
-import Login from 'screens/Login/Login';
+import { NavigationContainer } from '@react-navigation/native';
+import { Main } from 'navigation/Main';
+// import GetLocation from 'react-native-get-location'
 
-
-function App(): React.JSX.Element {
-
+const App: React.FC = () => {
   const isDarkMode = useColorScheme() === 'dark';
-
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : 'white',
   };
-  
+
   const Stack = createNativeStackNavigator();
-  const AuthStack = createNativeStackNavigator();
+
+//   GetLocation.getCurrentPosition({
+//     enableHighAccuracy: true,
+//     timeout: 60000,
+// })
+// .then(location => {
+//     console.log(location);
+// })
+// .catch(error => {
+//     const { code, message } = error;
+//     console.warn(code, message);
+// })
+
+
+
   return (
     <PaperProvider>
       <SafeAreaProvider>
-
         <StatusBar
           barStyle={isDarkMode ? 'light-content' : 'dark-content'}
           backgroundColor={backgroundStyle.backgroundColor}
         />
-         <NavigationContainer>
-         {/* <SafeAreaView style={backgroundStyle}> */}
-         <SafeAreaView style={{ flex: 1, backgroundColor: backgroundStyle.backgroundColor }}>
-      
+        <NavigationContainer>
+          <SafeAreaView style={{ flex: 1, backgroundColor: backgroundStyle.backgroundColor }}>
             <Stack.Navigator>
               <Stack.Screen
-                name="Login"
-                component={Login}
+                name="main"
+                component={Main}
                 options={{ headerShown: false }}
               />
             </Stack.Navigator>
-            <Text>hjsbdhbasd 23e123123</Text>
-         
-                  </SafeAreaView>
-
+          </SafeAreaView>
         </NavigationContainer>
       </SafeAreaProvider>
     </PaperProvider>
   );
-}
+};
 
 const styles = StyleSheet.create({
   sectionContainer: {

@@ -1,0 +1,101 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/.gitkeep",
+      "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    {
+      "path": "src/assets/fonts/AvenirArabic-Black.otf",
+      "sha1": "a616b7c872d72dc5cbea97ce749c54fb430a01c8"
+    },
+    {
+      "path": "src/assets/fonts/AvenirArabic-Book.otf",
+      "sha1": "365aa8c6ca0b6ac3a866388ac34fbce1f6bc5bd6"
+    },
+    {
+      "path": "src/assets/fonts/AvenirArabic-Heavy.otf",
+      "sha1": "182a62f0a85ba4ab7575daac0dfe4417ac0137b1"
+    },
+    {
+      "path": "src/assets/fonts/AvenirArabic-Light.otf",
+      "sha1": "21aaccd8b66c88ab4512e2c5542f18a112ce4cb7"
+    },
+    {
+      "path": "src/assets/fonts/AvenirArabic-Light1.otf",
+      "sha1": "834be69c588aa6b991a0ee34bd75436867b42fbd"
+    },
+    {
+      "path": "src/assets/fonts/AvenirArabic-Medium.otf",
+      "sha1": "635fb01a296f904b7f92e87d64fa856872d43597"
+    },
+    {
+      "path": "src/assets/fonts/Baloo-Regular.ttf",
+      "sha1": "f01dad4692e01e12dace4c17a916483732eabcbd"
+    },
+    {
+      "path": "src/assets/fonts/Droid-Arabic-Kufi-Bold.ttf",
+      "sha1": "ba295aea1d22225e336ce1939170e1d6a8f17216"
+    },
+    {
+      "path": "src/assets/fonts/DroidKufi-Regular.ttf",
+      "sha1": "f2a6e5609843c15ed5e94b1c12cf95ad23e0aa36"
+    },
+    {
+      "path": "src/assets/fonts/Lato-Bold.ttf",
+      "sha1": "d67fee08c79a82ce375ab9629ae5a903da8bb321"
+    },
+    {
+      "path": "src/assets/fonts/Lato-Light.ttf",
+      "sha1": "e0132feb514feb3cdb745d479c71dee62ad37757"
+    },
+    {
+      "path": "src/assets/fonts/Lato-Regular.ttf",
+      "sha1": "83dc5921761a7c3d1ee7badba3fc7e1e1f5ed803"
+    },
+    {
+      "path": "src/assets/fonts/Montserrat-Bold.ttf",
+      "sha1": "bf257f6f91f6522eccea6d4f28d57bb118c98729"
+    },
+    {
+      "path": "src/assets/fonts/Montserrat-Light.ttf",
+      "sha1": "3571554641eb70658156b4f3705057a9cd380c7b"
+    },
+    {
+      "path": "src/assets/fonts/Montserrat-Regular.ttf",
+      "sha1": "6b81c92b065c20c37190d983a79fa38cf6e60552"
+    },
+    {
+      "path": "src/assets/fonts/Montserrat-SemiBold.ttf",
+      "sha1": "201ccee5dcb1e9d38716168f3a56598a6808ed51"
+    },
+    {
+      "path": "src/assets/fonts/NotoKufiArabicBold.ttf",
+      "sha1": "61f2371349ba12f17814f64f5a35b96ab125a0d1"
+    },
+    {
+      "path": "src/assets/fonts/NotoKufiArabicRegular.ttf",
+      "sha1": "4064f825186ce179f996b4bcf6afece2d553c5d0"
+    },
+    {
+      "path": "src/assets/fonts/Roboto-Black.ttf",
+      "sha1": "ee52f7cf8e54f3ee2afbc474a352d5c19514d9c1"
+    },
+    {
+      "path": "src/assets/fonts/Roboto-Bold.ttf",
+      "sha1": "3dd713113ff2d79b94d2df343e2e28fa8e7279cf"
+    },
+    {
+      "path": "src/assets/fonts/Roboto-Light.ttf",
+      "sha1": "92cc3b6f9440193c12fd02ed690e434d685a9cc8"
+    },
+    {
+      "path": "src/assets/fonts/Roboto-Medium.ttf",
+      "sha1": "f6783010d5def128c4a1539333324f75701d9bab"
+    },
+    {
+      "path": "src/assets/fonts/Roboto-Regular.ttf",
+      "sha1": "096c9245b6a192d1403a82848e104a65f578a8ec"
+    }
+  ]
+}

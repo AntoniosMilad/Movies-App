@@ -11,69 +11,69 @@ First, you will need to start **Metro**, the JavaScript _bundler_ that ships _wi
 To start Metro, run the following command from the _root_ of your React Native project:
 
 ```bash
-# using npm
-npm start
 
-# OR using Yarn
+# firstly use the commands below to get the correct nvm required 
+1-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+2-   export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+3-   nvm use 18 
+
+# then use yarn to install node modules
+yarn 
+
 yarn start
 ```
 
 ## Step 2: Start your Application
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
 ### For Android
 
 ```bash
-# using npm
-npm run android
-
-# OR using Yarn
+#using Yarn
 yarn android
+#if there's any nullable issue use  
+npx jetify
 ```
 
 ### For iOS
 
 ```bash
-# using npm
-npm run ios
+# using yarn 
+yarn start
 
-# OR using Yarn
-yarn ios
+# then 
+run the app from the xcode 
 ```
 
 If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
+## Step 3: App structure
 
-Now that you have successfully run the app, let's modify it.
+we have 
+1- src that contain all app components and screens 
+2- app.js that read stacks from navigation folder 
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+src folder contain
+3- navigation stacks folder - that contain all app stacks and main file for bottom tab navigator 
+4- there is assets folder for animation and svg and images
+5-there's a common folder for dummy and dynamic compoennts 
+6- constant for any constatnts required
+7-Hooks for any global hooks
+8-i18n for handling langs
+9- redux each screen should have a redux file with it's name that contain action , constants and it's reducers 
+to divide things depend on the sepration of components
+10- screens include all screen 
+and each screen folder contain screen itself , style and hook for fetching data
+11- theme folder that conatin a global theme used in app 
+12- utils for any functions we can use it globaly all over the app 
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
-## Congratulations! :tada:
+it's a basic structure not all folder and files used ,I just tried to build a simple structure to define the flow of data 
+and left some examples for navigation and bottom tabs navigations and how switch between data the same there's a example for redux too using redux thunk.
 
-You've successfully run and modified your React Native App. :partying_face:
 
-### Now what?
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
 
-# Troubleshooting
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.

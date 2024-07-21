@@ -1,30 +1,16 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { AccountScreen } from "screens/Account/AccountScreen";
-import { HomeScreen } from "screens/Home/HomeScreen";
-
-
-
 import {HomeStackNavigator} from "./HomeStackNavigator";
-import {ChatStackNavigator} from "./ChatStackNavigator";
-import {AdPostStackNavigator} from "./AddPostStackNavigator";
 import {ProfileStackNavigator} from "./ProfileStackNavigator";
 import {MoreStackNavigator} from "./MoreStackNavigator";
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
   useColorScheme,
-  View,
 } from 'react-native';
 import {
   Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Ionicons from "react-native-vector-icons/Ionicons";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import Entypo from "react-native-vector-icons/Entypo";
 
 const Tab = createBottomTabNavigator();
 export const Main = () => {
@@ -49,32 +35,21 @@ export const Main = () => {
         component={HomeStackNavigator}
         options={{
           headerShown: false,
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="home" color={color} size={size} />
+          ),
         }}
+      
       />
-
 
       <Tab.Screen
         name="My account"
         component={ProfileStackNavigator}
         options={{
           headerShown: false,
-        }}
-      />
-
-
-      <Tab.Screen
-        name="Add your Ad"
-        component={AdPostStackNavigator}
-        options={{
-          headerShown: false,
-        }}
-      />
-
-      <Tab.Screen
-        name="Chat"
-        component={ChatStackNavigator}
-        options={{
-          headerShown: false,
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="account" color={color} size={size} />
+          ),
         }}
       />
 
@@ -83,16 +58,12 @@ export const Main = () => {
         component={MoreStackNavigator}
         options={{
           headerShown: false,
+          tabBarIcon: ({ color, size }) => (
+            <Entypo name="menu" color={color} size={size} />
+          ),
         }}
       />
 
-      {/* <Tab.Screen
-        name="Account"
-        component={AuthStack}
-        options={{
-          headerShown: false,
-        }}
-      /> */}
     </Tab.Navigator>
   );
 }
